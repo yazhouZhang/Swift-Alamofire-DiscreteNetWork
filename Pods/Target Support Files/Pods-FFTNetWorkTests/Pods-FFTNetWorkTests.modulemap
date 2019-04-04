@@ -1,0 +1,6 @@
+framework module Pods_FFTNetWorkTests {
+  umbrella header "Pods-FFTNetWorkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

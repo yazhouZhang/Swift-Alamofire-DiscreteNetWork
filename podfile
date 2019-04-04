@@ -1,0 +1,13 @@
+ platform :ios, '8.0'
+  use_frameworks!
+
+  target 'FFTNetWork' do
+  pod 'Alamofire'
+  pod ‘HandyJSON’,'5.0.0-beta'
+ 
+  end
+
+
+  target 'FFTNetWorkTests' do
+
+  end

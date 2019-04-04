@@ -1,0 +1,6 @@
+framework module Pods_FFTNetWork {
+  umbrella header "Pods-FFTNetWork-umbrella.h"
+
+  export *
+  module * { export * }
+}
