@@ -14,54 +14,6 @@ class BaseModel<value:Any>:BaseProtocol & ZYZNetWorkProtocol{
     typealias valueBlock = ((BaseService<value>)->())?
     typealias protocolClosure = valueBlock
     typealias modelClosure = (DataResponse<BaseService<value>>) -> Void
-   // typealias netConfig = ZYZNetConfig<T>
-//    class func FFT_APIServer()->String!{
-//        return ""
-//    }
-//    
-//   class func FFT_signParameters(_ paramters: Dictionary<String, Any>?)->Dictionary<String, Any>!{
-//        // TODO 签名优化
-//        return paramters;
-//    }
-//    
-//   class func FFT_setupRequestHeader()->Dictionary<String, String>!{
-//        let header = ["FuFeiTong": "baseConfig"];
-//        return header;
-//    }
-//    
-//    
-//    
-//   class func FFT_receiveResponseObject(_ responseObject: DataResponse<Any>?, error errorObj: Error?, success successObj: @escaping sucessClosure, failure failureObj: @escaping failClosure) {
-//        if((errorObj) != nil){
-//            //            if(error.code != kCFURLErrorFailingURLErrorKey){
-//            //                  可以做特殊处理，比如埋点，接口异常监测等
-//            //                  数据见const 提供信息
-//            //              }
-//            failureObj(errorObj)
-//            return
-//        }
-//        
-//        if(responseObject != nil){
-//            switch responseObject!.result {
-//            case .success(let value):
-//                if let dic = value as? Dictionary<String, Any>{
-//                    if(dic["ResultCode"] as! Int == 1){
-//                        successObj(dic["Item"] as AnyObject)
-//                        return
-//                    }
-//                }
-//                //            if(error.code != kCFURLErrorFailingURLErrorKey){
-//                //                  可以做特殊处理，比如埋点，接口异常监测等
-//                //                  数据见const 提供信息
-//                //              }
-//                //这里重新包装Error
-//                //error.handleLogicError(msg: dic.Message, respCode:dic.ResultCode);
-//                failureObj(errorObj)
-//            case .failure(_):
-//                break
-//            }
-//        }
-//    }
     required public init() {}
 }
 

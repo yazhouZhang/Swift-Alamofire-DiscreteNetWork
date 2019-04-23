@@ -87,15 +87,6 @@ extension BaseModel{ // private 不能夸文件访问，不能加，而且extens
                 break
             }
             
-            //            case .success( _):
-            //                self.FFT_receiveResponseObject(response.result.value, error: nil, success: (_ response.result.value: AnyObject) -> Void, failure: <#T##((Error) -> Void)##((Error) -> Void)##(Error) -> Void#>)
-            //                if let items = response.result.value as? NSArray{
-            //                    //遍历数组得到每一个字典模型
-            //                    for dict in items{
-            //                        print(dict)
-            //                    }
-            //                }
-            
         })
     }
 //

@@ -82,52 +82,6 @@ class NetConfigProtocol:ZYZNetConfig{
         }
     }
     
-//    func FFT_parseResponseObject(_ responseObject: DataRequest, sucess success: protocolClosure, failture: ((String) -> ())?) {
-//        responseObject<(DataResponse<BaseService<value>>)>.FFT_responseString{(model:modelClosure) in
-//            
-//        }
-//        if (!responseObject || [responseObject isEqual:[NSNull null]]) {
-//            return nil;
-//        } else if ([responseObject isKindOfClass:[NSArray class]]) {
-//            if (self != [NSString class] && self != [NSNumber class]) {
-//                return [NSArray yy_modelArrayWithClass:self json:responseObject];
-//            }
-//        } else if ([responseObject isKindOfClass:[NSDictionary class]]) {
-//            return [self yy_modelWithJSON:responseObject];
-//        }else if ([responseObject isKindOfClass:[NSString class]]) {
-//            return responseObject;
-//        }
-//        return nil;
-        
-//        if(responseObject is NSNull){
-//            return nil;
-//        }
-//        if let data = responseObject as? Array<AnyObject>{
-//           // JSONDeserializer<type(of: self): HandyJSON>.
-//           // [Self].deserialize(from:data)
-//           // HandyJSON.deserialize
-//         // let resultArray = [HomeModel].deserialize(from:data)
-//            let resultArray = BaseService<T>.deserialize(from:data)
-//            //[Self].deserialize(from:data)
-//            return resultArray as AnyObject;
-//        }
-//        
-//        if let data = responseObject as? Dictionary<String,Any>{
-//            let modeltool = JSONDeserializer<BaseService<T>>.deserializeFrom(dict: data)
-//            return modeltool as AnyObject
-//        }
-//        if let data = responseObject as? String{
-//            return responseObject;
-//        }
-//        print("______")
-//        
-//        print(responseObject)
-//        
-//        print(self)
-//        print(type(of: self))
-//        return nil;
-//    }
-    
     required init() {
         super.init()
     }
