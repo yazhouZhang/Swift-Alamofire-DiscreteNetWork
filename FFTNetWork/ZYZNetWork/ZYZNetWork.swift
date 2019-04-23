@@ -48,7 +48,7 @@ class ZYZNetConfig{ // 单独抽离出来，可以继承单独配置host，请�
     
     
     func FFT_setupRequestHeader()->Dictionary<String, String>!{
-        let header = ["FuFeiTong": "baseConfig"];
+        let header = ["T": "baseConfig"];
         return header;
     }
     
